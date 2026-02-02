@@ -1,7 +1,5 @@
 # 2026_CSE391_66TTNT1_KieuTheNam
 
-# 2026_CSE391_66TTNT1_KieuTheNam
-
 # 🌐 Bài thực hành môn Nền tảng Web
 
 ---
