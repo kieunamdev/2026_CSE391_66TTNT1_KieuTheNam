@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .gender-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-row label {
+            width: 150px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <!-- Basic Info -->
+        <section class="Basic-Info">
+            <h2>Basic Info</h2>
+
+            <!-- Employee-ID -->
+            <div class="form-row">
+                <label for="Employee-ID">Employee ID</label>
+                <span class="Employee-ID">9</span>
+            </div>
+
+            <!-- Last-Name -->
+            <div class="form-row">
+                <label for="Last-Name">Last Name</label>
+                <span class="Last-Name">Dodsworth</span>
+            </div>
+
+            <!-- First-Name -->
+            <div class="form-row">
+                <label for="First-Name">First Name</label>
+                <input type="text" name="First-Name" id="First-Name">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-row">
+                <label>Gender</label>
+                <div class="gender-group">
+                    <label><input type="radio" name="Gender" id="Gender" value="Male">Male</label>
+                    <label><input type="radio" name="Gender" id="Gender" value="Female">Female</label>
+                    <label> <input type="radio" name="Gender" id="Gender" value="XXX">XXX</label>
+                    <label><input type="radio" name="Gender" id="Gender" value="YYY">YYY</label>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <div class="form-row">
+                <label for="Title">Title</label>
+                <input type="text" name="Title" id="Title" value="Sales Representative">
+            </div>
+
+            <!-- Suffix -->
+            <div class="form-row">
+                <label for="Suffix">Suffix</label>
+                <input type="text" name="Suffix" id="Suffix" value="Ms.">
+            </div>
+
+            <!-- BirthDate -->
+            <div class="form-row">
+                <label for="BirthDate">BirthDate</label>
+                <input type="datetime-local" name="BirthDate" id="BirthDate" value="1969-07-20T00:00">
+            </div>
+
+            <!-- hireDate -->
+            <div class="form-row">
+                <label for="hireDate">hireDate</label>
+                <input type="datetime-local" name="hireDate" id="hireDate" value="1194-11-15T00:00">
+            </div>
+
+            <!-- SSN -->
+            <div class="form-row">
+                <label for="ssn">SSN # (if applicable)</label>
+                <input type="text" name="ssn" id="ssn">
+            </div>
+
+            <!-- report -->
+            <div class="form-row">
+                <label for="report">Reports To</label>
+                <select name="report" id="report">
+                    <option>Buchanan</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+
+        <section class="Contact Info">
+            <h2>Contact Info</h2>
+
+            <!-- email -->
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="name@example.com">
+            </div>
+
+            <!-- Address -->
+            <div class="form-row">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" value="7 Houndstooth Rd.">
+            </div>
+
+            <!-- City -->
+            <div class="form-row">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" value="London">
+            </div>
+
+            <!-- Region -->
+            <div class="form-row">
+                <label for="region">Region</label>
+                <input type="text" name="region" id="region">
+            </div>
+
+            <!-- postalCode -->
+            <div class="form-row">
+                <label for="postalCode">Postal Code</label>
+                <input type="text" name="postalCode" id="postalCode" value="WG2 7LT">
+            </div>
+
+            <!-- Country -->
+            <div class="form-row">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option>Russian Federation</option>
+                </select>
+            </div>
+
+            <!-- US Home Phone -->
+            <div class="form-row">
+                <label for="phone">US Home Phone</label>
+                <input type="tel" name="phone" id="phone" value="(234)234-2342">
+            </div>
+
+            <!-- Photo -->
+            <div class="form-row">
+                <label for="photo">Photo</label>
+                <input type="text" name="photo" id="photo" value="EmpID9.bmp">
+            </div>
+        </section>
+
+        <!-- Optional Info -->
+        <section class="Optional-Info">
+            <h2>Optional Info</h2>
+
+            <!-- Notes -->
+            <div class="form-row">
+                <label for="notes">Notes</label>
+                <textarea name="notes" id="notes" rows="8">
+                    Anne has a BA degree in English from St. Lawrence College.She is fluent in French and German.ZZZ
+                    </textarea>
+            </div>
+
+            <!-- Preferred Shift -->
+            <div class="form-row">
+                <label>Preferred Shift</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="shift" value="regular">
+                        Regular
+                    </label>
+                    <label>
+                        <input type="checkbox" name="shift" value="graveyard">
+                        Gravy Yard
+                    </label>
+                </div>
+            </div>
+
+            <!-- Active? -->
+            <div class="form-row">
+                <label for="active">Active?</label>
+                <input type="checkbox" name="active" id="active">
+            </div>
+
+            <!-- Are you human? -->
+            <div class="form-row">
+                <label>Are you human?</label>
+                <div class="captcha-box">
+                    <strong class="captcha-text">TIDAWO</strong>
+                    <span class="captcha-refresh">Click to change</span>
+                    <input type="text" name="captcha" placeholder="Enter text above">
+                </div>
+            </div>
+        </section>
+    </form>
+
+
+</body>
+
+</html>
