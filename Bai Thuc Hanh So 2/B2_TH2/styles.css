@@ -1,0 +1,93 @@
+/* HERO SECTION */
+#hero {
+    height: 90vh;
+    background-image: url("images/places/ocean.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#hero-content {
+    position: relative;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 50px;
+    border-radius: 4px;
+}
+
+#hero-content h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#hero-content p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+#hero-content a {
+    background-color: #ffd43b;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero-content a:hover {
+    background-color: #f5c400;
+}
+
+/* ====== HIGHLIGHTS SECTION ======== */
+#highlights {
+    padding: 60px 80px;
+    background: linear-gradient(0deg, #d8f3f5, #edf9fa);
+}
+
+#highlights h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
+/* ======== Danh sach diem den ======= */
+#destinations {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.destination {
+    width: 300px;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination p {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.destination strong {
+    color: #009688;
+}
