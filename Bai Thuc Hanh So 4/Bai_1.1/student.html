@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan ly sinh vien</title>
+    <link rel="stylesheet" href="student.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Quan ly sinh vien</h1>
+    <div class="newStudent">
+        <form action="">
+            <label for="name">Ho Ten</label>
+            <input type="text" class="name" name="name" id="name" required>
+
+            <label for="Diem">Điểm</label>
+            <input type="number" class="diem" name="diem" id="diem" step="0.01" min="0" max="10">
+
+            <button type="button" id="addBtn">Them</button>
+        </form>
+    </div>
+
+    <div class="list-student">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Ho Ten</th>
+                    <th>Điểm</th>
+                    <th>Xep Loai</th>
+                    <th>Thao tac</th>
+                </tr>
+            </thead>
+
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <p id="stat"></p>
+
+    <script src="student.js"></script>
+</body>
+
+</html>

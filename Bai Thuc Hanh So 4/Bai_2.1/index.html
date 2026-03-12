@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Dang Ky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="sign-up-form">
+        <h2>Dang ky</h2>
+
+        <div class="form-rows">
+            <label for="name">Ho va Ten</label>
+            <input type="text" name="name" id="name" required>
+            <span class="error" id="name-error"></span>
+        </div>
+
+        <div class="form-rows">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="form-rows">
+            <label for="telephone">So Dien Thoai</label>
+            <input type="tel" name="telephone" id="telephone" required>
+            <span class="error" id="telephone-error"></span>
+        </div>
+
+        <div class="form-rows">
+            <label for="password">Mat Khau</label>
+            <input type="password" name="password" id="password" required>
+            <span class="error" id="password-error"></span>
+        </div>
+
+        <div class="form-rows">
+            <label for="confirm-password">Xac nhan lai mat khau</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+            <span class="error" id="confirm-password-error"></span>
+        </div>
+
+
+        <div class="form-rows">
+            <label for="sex">Gioi Tinh</label>
+            <input type="radio" name="sex" id="Nam" value="Nam">
+            <label for="Nam">Nam</label>
+
+            <input type="radio" name="sex" id="Nu" value="Nu">
+            <label for="Nu">Nu</label>
+            <span class="error" id="sex-error"></span>
+        </div>
+
+        <div class="form-rows">
+            <input type="checkbox" name="dieukhoan" id="dieukhoan">
+            <label for="dieukhoan">Tôi đồng ý với điều khoản</label>
+            <span class="error" id="dieukhoan-error"></span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Dang Ky</button>
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
